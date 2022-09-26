@@ -24,7 +24,7 @@ class quicksort {
 
 		// Index of smaller element and
 		// indicates the right position
-		// of pivot found so far
+		
 		int i = (low - 1);
 
 		for (int j = low; j <= high - 1; j++) {
