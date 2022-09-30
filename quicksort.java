@@ -72,9 +72,9 @@ class quicksort {
 	// Driver Code
 	public static void main(String[] args)
 	{
-		int[] arr = { 10, 7, 8, 9, 1, 5 };
+		int[] arr = { 10, 7, 8, 9, 1, 5 }; // given input 
 		int n = arr.length;
-
+                
 		quickSort(arr, 0, n - 1);
 		System.out.println("Sorted array: ");
 		printArray(arr, n);
