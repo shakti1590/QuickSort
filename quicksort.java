@@ -79,5 +79,9 @@ class quicksort {
 		printArray(arr, n);
 	}
 }
+// the quick sort method can be summarized in three steps:
+// Pick: Select an element.
+// Divide: Split the problem set, move smaller parts to the left of the pivot and larger items to the right.
+// Repeat and combine: Repeat the steps and combine the arrays that have previously been sorted.
 
 // This code is contributed by shakti
