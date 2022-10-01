@@ -59,7 +59,7 @@ class quicksort {
 		}
 	}
 
-	// Function to print an array
+	// Here, we will write a function to print an array. 
 	static void printArray(int[] arr, int size)
 	{
 		for (int i = 0; i < size; i++)
