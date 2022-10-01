@@ -1,5 +1,5 @@
 // Java implementation of QuickSort
-// QuickSort is a Divide and Conquer algorithm.
+
 import java.io.*;
 
 class quicksort {
