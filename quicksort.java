@@ -1,5 +1,5 @@
 // Java implementation of QuickSort
-
+/*Quicksort is the widely used sorting algorithm that makes n log n comparisons in average case for sorting an array of n elements. It is a faster and highly efficient sorting algorithm. This algorithm follows the divide and conquer approach*/
 import java.io.*;
 
 class quicksort {
@@ -72,7 +72,7 @@ class quicksort {
 	// Driver Code
 	public static void main(String[] args)
 	{
-		int[] arr = { 10, 7, 8, 9, 1, 5 }; // given input 
+		int[] arr = { 11, 17, 18, 9, 10, 5 }; // given input 
 		int n = arr.length;
                 
 		quickSort(arr, 0, n - 1);
@@ -81,4 +81,4 @@ class quicksort {
 	}
 }
 
-// This code is contributed by shakti
+
