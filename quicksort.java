@@ -72,7 +72,7 @@ class quicksort {
 	// Driver Code
 	public static void main(String[] args)
 	{
-		int[] arr = { 11, 17, 18, 9, 10, 5 }; // given input 
+		int[] arr = { 11, 17, 18, 9, 10, 35 }; // Given inputs
 		int n = arr.length;
                 
 		quickSort(arr, 0, n - 1);
