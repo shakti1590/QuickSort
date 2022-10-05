@@ -4,7 +4,7 @@ import java.io.*;
 
 class quicksort {
 
-	// A utility function to swap two elements
+	//  Always pick first element as pivot
 	static void swap(int[] arr, int i, int j)
 	{
 		//swap
