@@ -24,8 +24,6 @@ class quicksort {
 		// pivot
 		int pivot = arr[high];
 
-		// Index of smaller element and
-		// indicates the right position
 		
 		int i = (low - 1);
 
