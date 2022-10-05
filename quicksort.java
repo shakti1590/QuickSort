@@ -71,9 +71,10 @@ class quicksort {
 	// Driver Code
 	public static void main(String[] args)
 	{
+		// taking arr as input
 		int[] arr = { 11, 17, 18, 9, 10, 35 }; // Given inputs
 		int n = arr.length;
-                
+                // calling quickSort function
 		quickSort(arr, 0, n - 1);
 		System.out.println("Sorted array: ");
 		printArray(arr, n);
