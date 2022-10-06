@@ -17,10 +17,9 @@ class quicksort {
 	static int partition(int[] arr, int low, int high)
 	{
 
-		// pivot
-		int pivot = arr[high];
-
+		//Here we pick a pivot that will be used for partition ahead
 		
+		int pivot = arr[high];
 		int i = (low - 1);
 
 		for (int j = low; j <= high - 1; j++) {
@@ -42,6 +41,7 @@ class quicksort {
 	
 	static void quickSort(int[] arr, int low, int high)
 	{
+		//check if values are given correctly and then move ahead
 		if (low < high) {
 
 			// pi is partitioning index, arr[p]
@@ -67,13 +67,18 @@ class quicksort {
 	// Driver Code
 	public static void main(String[] args)
 	{
-		// taking arr as input
-		int[] arr = { 11, 17, 18, 9, 10, 35 }; // Given inputs
-		int n = arr.length;
+		// taking array as input
+		Scanner sc=new Scanner(System.in);  
+		int p=sc.nextInt();
+		int[] arr = new int[10];  
+		for(int i=0; i<p; i++)  
+        	{  
+            	arr[i]=sc.nextInt();  
+        	}
                 // calling quickSort function
-		quickSort(arr, 0, n - 1);
+		quickSort(arr, 0, p - 1);
 		System.out.println("Sorted array: ");
-		printArray(arr, n);
+		printArray(arr, p);
 	}
 }
 
