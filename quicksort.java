@@ -1,5 +1,5 @@
 // Java implementation of QuickSort
-
+// Quicksort is a fast sorting algorithm that works by splitting a large array of data into smaller sub-arrays.
 import java.io.*;
 
 class quicksort {
