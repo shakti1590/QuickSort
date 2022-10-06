@@ -36,7 +36,7 @@ class quicksort {
 			}
 		}
 		swap(arr, i + 1, high);
-		return (i + 1);
+		return (i++); // -----hima---
 	}
 
 	
