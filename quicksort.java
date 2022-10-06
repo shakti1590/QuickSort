@@ -77,4 +77,4 @@ class quicksort {
 	}
 }
 
-
+//Quicksort is a sorting algorithm, which is leveraging the divide-and-conquer principle.
