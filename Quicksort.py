@@ -1,3 +1,5 @@
+#Quicksort is Divide and Conquer algorithm.
+#The key process in quicksort is partition()
 data = []
 
 def partition(array, start, end):
