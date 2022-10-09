@@ -73,16 +73,12 @@ class quicksort {
 		int p=sc.nextInt();
 		// dynamic allocating the memory to array.
 		int[] arr = new int[10];  
-		//loop for updation of array.
 		for(int i=0; i<p; i++)  
         	{  
-            	arr[i]=sc.nextInt();  //nextInt()method is used to take input of type integers
+            	arr[i]=sc.nextInt();  
         	}
-                // calling quickSort function
+        
 		quickSort(arr, 0, p - 1);
 		System.out.println("Sorted array: ");
 		printArray(arr, p);
 	}
-}
-
-//Quicksort is a sorting algorithm, which is leveraging the divide-and-conquer principle.
