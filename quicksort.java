@@ -55,7 +55,7 @@ class quicksort {
 		}
 	}
 
-	// Function to print an array
+	// method to print an array
 	static void printArray(int[] arr, int size)
 	{
 		for (int i = 0; i < size; i++)
@@ -73,7 +73,7 @@ class quicksort {
 		int[] arr = new int[10];  
 		for(int i=0; i<p; i++)  
         	{  
-            	arr[i]=sc.nextInt();  
+            	arr[i]=sc.nextInt();  //nextInt()method is used to take input of type integers
         	}
                 // calling quickSort function
 		quickSort(arr, 0, p - 1);
