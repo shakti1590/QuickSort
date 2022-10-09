@@ -1,6 +1,7 @@
 // Java implementation of QuickSort
 // Quicksort is a fast sorting algorithm that works by splitting a large array of data into smaller sub-arrays.
 import java.io.*;
+import java.util.*;
 
 class quicksort {
 
@@ -70,7 +71,9 @@ class quicksort {
 		// taking array as input
 		Scanner sc=new Scanner(System.in);  
 		int p=sc.nextInt();
+		// dynamic allocating the memory to array.
 		int[] arr = new int[10];  
+		//loop for updation of array.
 		for(int i=0; i<p; i++)  
         	{  
             	arr[i]=sc.nextInt();  
