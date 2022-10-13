@@ -1,24 +1,23 @@
-// C++ Implementation of the Quick Sort Algorithm by Rahul Bhatt
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int partition(int arr[], int start, int end)
+int partition(int arr[], int s, int e)
 {
 
-	int pivot = arr[start];
+	int pivot = arr[s];
 
 	int count = 0;
-	for (int i = start + 1; i <= end; i++) {
+	for (int i = s + 1; i <= e; i++) {
 		if (arr[i] <= pivot)
 			count++;
 	}
 
 	// Giving pivot element its correct position
-	int pivotIndex = start + count;
-	swap(arr[pivotIndex], arr[start]);
+	int pivotIndex = s + count;
+	swap(arr[pivotIndex], arr[s]);
 
 	// Sorting left and right parts of the pivot element
-	int i = start, j = end;
+	int i = s, j = e;
 
 	while (i < pivotIndex && j > pivotIndex) {
 
@@ -38,21 +37,31 @@ int partition(int arr[], int start, int end)
 	return pivotIndex;
 }
 
-void quickSort(int arr[], int start, int end)
+void quickSort(int arr[], int s, int e)
 {
 
 	// base case
-	if (start >= end)
+	if (s >= e)
 		return;
 
 	// partitioning the array
-	int p = partition(arr, start, end);
+	int p = partition(arr, s, e);
 
 	// Sorting the left part
-	quickSort(arr, start, p - 1);
+	quickSort(arr, s, p - 1);
 
 	// Sorting the right part
-	quickSort(arr, p + 1, end);
+	quickSort(arr, p + 1, e);
+}
+
+void printArray(int arr[],int n){
+    
+    for(int i =0 ;i<n;i++){
+        
+        cout<<arr[i]<<" ";
+        
+    }
+    cout<<endl;
 }
 
 int main()
@@ -62,10 +71,7 @@ int main()
 	int n = 6;
 
 	quickSort(arr, 0, n - 1);
-
-	for (int i = 0; i < n; i++) {
-		cout << arr[i] << " ";
-	}
-
+    printArray(arr,n);
+	
 	return 0;
 }
