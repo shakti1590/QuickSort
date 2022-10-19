@@ -82,3 +82,4 @@ class quicksort {
 		System.out.println("Sorted array: ");
 		printArray(arr, p);
 	}
+//Quicksort is an in-place sorting algorithm
