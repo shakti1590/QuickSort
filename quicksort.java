@@ -1,5 +1,6 @@
 // Java implementation of QuickSort
 // Quicksort is a fast sorting algorithm that works by splitting a large array of data into smaller sub-arrays.
+/*Like Merge Sort, QuickSort is a Divide and Conquer algorithm. It picks an element as a pivot and partitions the given array around the picked pivot*/
 import java.io.*;
 import java.util.*;
 
