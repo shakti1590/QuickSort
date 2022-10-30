@@ -68,7 +68,6 @@ class quicksort {
 	// Driver Code
 	public static void main(String[] args)
 	{
-		// taking array as input
 		Scanner sc=new Scanner(System.in);  
 		int p=sc.nextInt();
 		// dynamic allocating the memory to array.
@@ -77,7 +76,6 @@ class quicksort {
         	{  
             	arr[i]=sc.nextInt();  
         	}
-        
 		quickSort(arr, 0, p - 1);
 		System.out.println("Sorted array: ");
 		printArray(arr, p);
