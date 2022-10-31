@@ -68,6 +68,7 @@ class quicksort {
 	// Driver Code
 	public static void main(String[] args)
 	{
+		//main function
 		Scanner sc=new Scanner(System.in);  
 		int p=sc.nextInt();
 		// dynamic allocating the memory to array.
