@@ -6,6 +6,7 @@ import java.util.*;
 class quicksort {
 
 	//  Always pick first element as pivot
+	//function for swap
 	static void swap(int[] arr, int i, int j)
 	{
 		//swap
@@ -14,16 +15,16 @@ class quicksort {
 		arr[j] = temp;
 	}
 
-	
-	static int partition(int[] arr, int low, int high)
+	//find the partition index
+	static int partition(int[] arr, int s, int e)
 	{
 
 		//Here we pick a pivot that will be used for partition ahead
 		
-		int pivot = arr[high];
-		int i = (low - 1);
+		int pivot = arr[e];
+		int i = (s - 1);
 
-		for (int j = low; j <= high - 1; j++) {
+		for (int j = s; j <= e - 1; j++) {
 
 			// If current element is smaller
 			// than the pivot
@@ -35,11 +36,11 @@ class quicksort {
 				swap(arr, i, j);
 			}
 		}
-		swap(arr, i + 1, high);
-		return (i++); // -----hima---
+		swap(arr, i + 1,e);
+		return (i++); 
 	}
 
-	
+	//function for quick sort
 	static void quickSort(int[] arr, int low, int high)
 	{
 		//check if values are given correctly and then move ahead
