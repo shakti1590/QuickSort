@@ -16,7 +16,7 @@
 * Head to [Practice_PR.md](/Practice_PR.md)
 * Add this line of code to next line after a name.
 ```
-- [YourName](https://github.com/YourGitHubUsername)
+- [tejas-kr](https://github.com/tejas-kr)
 ```
  
 
